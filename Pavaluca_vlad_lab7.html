@@ -75,6 +75,14 @@ function myFunction() {
   document.getElementById("email").style.fontFamily = "Courier New";
   document.getElementById("poza").style.border = "thin dotted red";
 }
+function arVarst() {
+var azi = new Date;
+var varstMea;
+
+var anNasc = document.getElementById("varsta").innerHTML;
+varstMea = azi.getFullYear()- parseInt(anNasc);
+document.getElementById("varsta").innerHTML = varstMea;
+}
 </script>
 
 <title>Pagina personala laborator 5</title> 
@@ -84,6 +92,7 @@ function myFunction() {
 <body> 
 
 <h1 id="nume">Pavaluca Vlad</h1> 
+<h5 onmouseover = "arVarst()" id="varsta">2002</h5>
 
 <h2 id="email">E-mail:vladpavaluca@gmail.com</h2> 
 
